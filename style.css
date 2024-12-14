@@ -1,0 +1,391 @@
+/*HTML CSS*/
+html {
+  height:100%;
+}
+/*Body CSS*/
+body {
+  margin:0;
+}
+/*Heading 1 CSS*/
+h1{
+  font-family: sans-serif;
+  font-size:32px;
+}
+/*Heading 2 CSS*/
+h2{
+  text-align:center;
+  font-family: sans-serif;
+  font-size:32px;
+  color:white;
+}
+/*Text CSS*/
+p1{
+  font-family: sans-serif;
+  font-size:21px;
+  color:white;
+  text-align:center;
+}
+
+/*Banner CSS */
+.banner {
+  border: 5px outset #800080;
+  background-color: #0000A0;
+  color: white;
+  text-align: center;
+}
+
+/*The following is the css code for my animation background. it uses 3 different colours, rotates them on an angle and allows them to slide over one another creating the animation effect*/
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #0000A0 50%, 	#800080 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*The following code shows how the colours are visible over one another*/
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+/*Form CSS*/
+<style>
+ {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: red;
+  border: 4px solid #DC143C;
+  border-radius: 16px;
+  color: white;
+  padding: 12px 20px;
+  transition:0.7s;
+  cursor: pointer;
+  float: right;
+
+}
+
+input[type=submit]:hover {
+  background-color: black;
+  border: 4px solid #FFFAF0;
+  color: white;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: purple;
+  opacity: 0.85;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  font-size: 20px;
+  font-family:sans-serif;
+  color:white;
+}
+
+.col-75 {
+  float: left;
+  width: 65%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/*Home Button CSS*/
+.btnHome{
+  background-color: red;
+  border: 4px solid #dc143c;
+  border-radius: 16px;
+  color: white;
+  padding: 6px 24px;
+  text-align: Center;
+  font-size: 24px;
+  margin: 20px 10px;
+  transition: 0.7s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+/*Button CSS when hovering over with the mouse*/
+.btnHome:hover {
+  background-color: black;
+  border: 4px solid #fffaf0;
+  color: white;
+}
+</style>
+
+{
+	background:#EFE2D5;
+	overflow-x:hidden
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box
+}
+:root{
+	--font-1:Oswald,sans-serif;
+	--font-2:Arimo,sans-serif
+}
+:before,:after{
+	content:'';
+	position:absolute
+}
+a{
+	display:inline-block;
+	text-decoration:none
+}
+span{
+	display:inline-block
+}
+#jd-main,.jd-app{
+	position:relative;
+	width:100%;
+	height:auto;
+	font-size:16px;
+	font-family:var(--font-1);
+	color:#FFF;
+	overflow-x:hidden
+}
+.jd-app{
+	border-top:solid 30px #252525
+}
+.jd-container{
+	width:940px;
+	height:auto;
+	margin:0 auto;
+	position:relative
+}
+.jd-header{
+	height:270px;
+	position:relative
+}
+.jd-banner{
+	position:absolute;
+	width:100%;
+	height:270px;
+	overflow:hidden;
+	display:flex;
+	align-items:center;
+	justify-content:center
+}
+.jd-banner img{
+	width:100%
+}
+.jd-btn a{
+	width:120px;
+	height:32px;
+	line-height:32px;
+	text-align:center;
+	color:#FFFf00;
+	text-transform:uppercase;
+	font-family:var(--font-2);
+	font-size:.8rem;
+	transition:all .3s linear
+}
+.jd-content{
+	width:940px;
+	height:auto;
+	margin:0 auto;
+	position:relative;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	padding-top:30px
+}
+.jd-header h1{
+	text-align:center;
+	margin-top:80px;
+	display:inline-block;
+	width:100%;
+	text-shadow:5px 5px 4px rgba(0,0,0,.5)
+}
+.jd-txt{
+	width:240px;
+	height:36px;
+	background:#212121;
+	border-radius:3px;
+	text-align:center;
+	line-height:36px;
+	color:#00ff00;
+	margin-left:calc(50% - 70px)
+}
+.jd-bottom{
+	width:100%;
+	height:90px;
+	position:absolute;
+	bottom:0;
+	background:rgba(255,255,255,.3)
+}
+.jd-bottom .jd-container{
+	display:flex;
+}
+.jd-user{
+	width:110px;
+	height:110px;
+	border-radius:50%;
+	overflow:hidden;
+	box-shadow:0 0 0 5px #d8e7f0;
+	position:absolute;
+	left:5px;
+	top:-40px
+}
+.jd-user img{
+	width:100%
+}
+.jd-navigator{
+	width:800px;
+	height:90px;
+	display:flex;
+	justify-content:space-between;
+	margin-left:140px;
+	padding-top:10px
+}
+.jd-btn-nav{
+	position:relative;
+	height:60px;
+	color:#FFF
+}
+.jd-btn-nav:after{
+	width:100%;
+	height:2px;
+	background:#9adaff;
+	left:0;
+	bottom:0
+}
+.jd-btn-nav span{
+	font-size:.9rem
+}
+.jd-btn-nav p{
+	font-size:.8rem;
+	color:#D9D9D9
+}
+.jd-box{
+	width:110px;
+	height:130px;
+	background: #dceef6;
+	box-shadow:0 0 2px 1px rgba(0,0,0,.1);
+	padding:14px;
+	margin-bottom:20px;
+	position:relative
+}
+.jd-box img{
+	width:82px;
+	height:82px;
+	border:solid 1px #212121;
+	margin:0
+}
+.jd-box span{
+	width:82px;
+	height:19px;
+	background:#212121;
+	text-align:center;
+	line-height:19px;
+	text-transform:uppercase;
+	font-size:.7rem;
+	position:absolute;
+	top:96px;
+	left:14px
+}
+.jd-footer{
+	width:100%;
+	height:30px;
+	background:#212121;
+	line-height:40px;
+	height:40px;
+	text-align:center;
+	font-size:.7rem;
+	margin-top:40px
+}
+.jd-video{
+	width:265px;
+	height:185px;
+	background:#111;
+	position:absolute;
+	bottom:50px;
+	right:10px;
+	box-shadow:-5px 5px rgba(0,0,0,.1);
+	transition:all .5s ease-out;
+	transform:translateX(300px)
+}
+.jd-video span{
+	width:100%;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	font-size:.75rem;
+	color:#8E119B;
+	background:#212121
+}
+.jd-videoBox{
+	width:265px;
+	height:150px;
+	background:#222
+}
+#-jd_1:target .jd-btn a:nth-child(1){
+	margin-top:-32px
+}
+#-jd_1:target .jd-video{
+	transform:translateX(0);
+}
+
